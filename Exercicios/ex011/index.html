@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML5</title>
+  </head>
+  <body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+      Tente abrir este site em vários dispositivos diferentes ou aumente e
+      diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+      <!--As imagens tem que ficar em ordem crescente-->
+      <source
+        media="(max-width:750px)"
+        srcset="imagens/foto-p.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width: 1050px)"
+        srcset="imagens/foto-m.png"
+        type="image/png"
+      />
+      <img src="imagens/foto-g.png" alt="Imagem Flexível" />
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduir áudio em HTML</p>
+    <!--<audio src="media/stomping-rock-four-shots-111444.mp3" autoplay controls></audio> Esta maneira pode não funcionar em alguns navegadores-->
+    <audio preload="metadata" controls loop <!--autoplay-->
+      <!-- loop: repete autoplay: não está funcionando????-->
+      <source
+        src="media/stomping-rock-four-shots-111444.mp3"
+        type="audio/mpeg"
+      />
+      <!--Podem ter arquivos ogg ou wave (evitar pois é pesado). A ordem influencia qual vai ser tentado primeiro-->
+      <p>
+        Infelizmente o seu navegador não permite a reprodução do aúdio.
+        <a href="media/stomping-rock-four-shots-111444.mp3"
+          >Clique aqui para baixar o arquivo em MP3.</a
+        >
+      </p>
+    </audio>
+    <h1>Reproduzindo Vídeo</h1>
+    <!--Evitar hospedagem no site. Preferir hospedagem externa para não encarecer a hospedagem do site. Há alguns formatos que não são aceitos por alguns navegadores.-->
+    <p>Este vídeo está hospedado no próprio servidor:</p>
+    <video width="500" controls poster="imagens/Capa2.png">
+      <source src="media/201308-915375262 Tiny.mp4" type="video/mp4" />
+      <source src="media/201308-915375262 Tiny.ogg" type="video/ogg" />
+      <p>Infelizmente o seu navegador não permite a reprodução do aúdio.</p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Este vídeo está hospedado externamente:</p>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/faRSX95Akbs?si=rLkTwODfBVZYGMFk&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h1>Inserindo vídio do Vimeo</h1>
+<iframe src="https://player.vimeo.com/video/340534582?h=342d014fd7&portrait=0" width="533" height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </body>
+</html>

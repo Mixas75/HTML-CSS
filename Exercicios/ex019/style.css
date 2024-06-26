@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*
+HTML id é CSS #
+HTML class é CSS .
+Dentro de 1 HTML só se coloca um id
+Se quiser ter mais de um elemen. Elemento pode ter 2 ou mais classes, ou 1 id e uma ou mais classes.
+*/
+body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(218, 60, 227);
+}
+/* ou h1#principal */
+#principal{
+    text-align: center;
+    background-color: rgb(218, 60, 227);
+    color: white;
+}
+h2{
+    color: rgb(244, 182, 101);
+}
+.basico{
+color: rgb(72, 145, 46);
+}
+.intermediario{
+    color: rgb(143, 145, 46);
+}
+.avançado{
+    color: rgb(145, 46, 46);
+}
+.destaque{
+    background-color: rgb(212, 200, 125);
+}

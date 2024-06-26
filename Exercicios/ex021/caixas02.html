@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: lightgray;
+        margin: 0;
+        color: white;
+      }
+      header {
+        background-color: #888585;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+      h1{
+        text-align: center;
+      
+      }
+      nav{
+        display: flex;
+        background-color: rgb(36, 64, 88);
+        padding: 2px;
+        justify-content: end;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.479);
+        border-radius: 5px;
+      }
+      nav > a{
+        text-decoration: none;
+        color: lightgray;
+        margin: 5px;
+        font-weight: bold;
+       
+      }
+      nav >a:hover{
+        color: rgb(130, 170, 221);
+        text-decoration: underline;
+      }
+      main{
+        background-color: #888585;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+      aside{
+        background-color: rgb(36, 64, 88);
+        border-radius: 5px;
+        padding-left: 5px;
+      }
+      footer{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin: 0px;
+        text-align: center;
+        border-radius: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Título</h1>
+      <nav>
+        <a href="#">item1</a>
+        <a href="#">item2</a>
+        <a href="#">item3</a>
+        <a href="#">item4</a>
+        <a href="#">item5</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <h2>Título do assunto</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          unde cum commodi facere, natus corporis! Delectus reprehenderit atque
+          nulla qui harum. Fugit aliquam dolorem aut quis libero, esse ea alias?
+        </p>
+      </section>
+      <section id="noticias">
+        <article>
+          <h3>Notícia 1</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+            unde cum commodi fac.
+          </p>
+          <aside>Escrito por Fulano Cicrano</aside>
+        </article>
+      </section>
+    </main>
+    <footer>Desenvolvido por alguém.</footer>
+  </body>
+</html>
