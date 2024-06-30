@@ -12,17 +12,33 @@
         /* border: 3px solid black; */
         width: 300px;
         border-collapse: collapse;
+        
+      }
+      table.tab01{
         text-align: center;
       }
       td {
         border: 1px solid black;
         padding: 6px;
       }
-      tr.linha{
+      tr.linha {
         background-color: lightgray;
       }
-      td.dado{
+      td.dado {
         background-color: lightgreen;
+      }
+      table.tab02{
+        width: 400px;
+        height: 400px;
+        
+      }
+      table.tab02 td{
+        text-align: center; /*alinhammento horizontal*/
+        vertical-align: middle; /*alinhamento vertical - top-middle-bottom*/
+      }
+      table.tab02 td.numero{
+        text-align: right;
+        vertical-align: bottom;
       }
     </style>
   </head>
@@ -34,14 +50,14 @@
             table header = cabeçalho
             table data = dados
     -->
-    <table>
+    <table class="tab01">
       <tr>
         <!--primeira linha-->
         <td>A1</td>
         <td>B1</td>
         <td>C1</td>
       </tr>
-      <tr  class="linha">
+      <tr class="linha">
         <!--segunda linha-->
         <td>A2</td>
         <td>B2</td>
@@ -63,8 +79,31 @@
         <td>A5</td>
         <td>B5</td>
       </tr>
-      <tr>
+      <tr class="linha">
         <td>A6</td>
+      </tr>
+    </table>
+    <h1>Minha segunda tabela</h1>
+    <table class="tab02">
+      <tr>
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+      </tr>
+      <tr>
+        <td>A2</td>
+        <td>B2</td>
+        <td class="numero">C2</td>
+      </tr>
+      <tr>
+        <td>A3</td>
+        <td>B3</td>
+        <td class="numero">C3</td>
+      </tr>
+      <tr>
+        <td>A4</td>
+        <td>B4</td>
+        <td>C4</td>
       </tr>
     </table>
   </body>
