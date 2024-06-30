@@ -9,16 +9,37 @@
         font-family: Arial, Helvetica, sans-serif;
         width: 600px;
         border-collapse: collapse;
+        position: relative;
       }
       th,
       td {
         border: 2px solid black;
         padding: 2px;
       }
+      td.pop{
+        text-align: right;
+      }
+      td.posicao, td.percentual{
+        text-align: center;
+      }
+      caption{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 5px;
+        background-color: lightgray;
+      }
+      thead > tr > th{
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+      }
       thead,
       tfoot {
         background-color: gray;
         color: white;
+      }
+      tbody > tr:nth-child(2n){
+        background-color: lightgray; /*2n é a cada 2 linhas, pode colocar odd ou even (par ou ímpar) ou em outras repetições. Ex 3n*/
       }
     </style>
   </head>
@@ -26,6 +47,7 @@
     <h1>Uso de tabelas GRANDES</h1>
     <!--Anatomia para tabelas grandes
        table
+            caption
             thead
                 tr, td, th
             tbody
@@ -34,11 +56,14 @@
                 tr, td, th
         -->
     <table>
+      <caption>População brasileira segundo o censo 2022</caption>
       <thead>
-        <th>Posição</th>
-        <th>Estado</th>
-        <th>População</th>
-        <th>% da população total</th>
+        <tr>
+          <th scope="col" style="width: 15%;">Posição</th>
+          <th scope="col">Estado</th>
+          <th scope="col">População</th>
+          <th scope="col" style="width: 15%;">% da população total</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
@@ -206,8 +231,8 @@
         </tr>
       </tbody>
       <tfoot>
-        <th>Total de habitantes</th>
-        <td>203.062.512</td>
+        <th scope="row" colspan="2">Total de habitantes</th>
+        <td colspan="2" class="pop"><strong>203.062.512</strong></td>
       </tfoot>
     </table>
   </body>
