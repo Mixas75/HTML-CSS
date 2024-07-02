@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 95vw;
+            border: 2px black solid;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha:</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum deleniti repellendus fugit animi optio, quasi delectus dolores, sapiente quidem quod veritatis ducimus suscipit inventore laudantium vel? Illum adipisci unde sequi!</p>
+
+    <ul> <!--coloca o conteudo no iframe. O iframe precisa ter um "name"-->
+        <li><a href="paginas extras/pagina001.html" target="tela">Primeira Página</a></li>
+        <li><a href="paginas extras/pagina002.html" target="tela">Segunda Página</a></li>
+        <li><a href="paginas extras/pagina003.html" target="tela">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo laborum dignissimos magni provident fugit? Voluptatibus deserunt quas repellendus velit voluptatem ut distinctio? Velit, tempore facere vel cupiditate rem quidem ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga iusto autem vel ipsa reiciendis illo tempore possimus sunt eveniet repellat. Eveniet sit doloribus ad aperiam est architecto nostrum voluptatum cum.</p>
+
+    <iframe src="" frameborder="0" name="tela">
+        <p>Infelizmente, seu navegador não é compatível!</p> <!--Mensagem alternativa, caso o navegador não aceite Iframe-->
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo magni sapiente perspiciatis commodi iusto praesentium eveniet reiciendis eos reprehenderit, recusandae earum deleniti dolore odit cumque libero. Autem, quibusdam quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate quis culpa eius. Ipsam, porro. Ad explicabo libero accusantium aliquam excepturi voluptatibus aliquid corrupti iure consequatur. Soluta voluptatem expedita accusamus.</p>
+</body>
+</html>
