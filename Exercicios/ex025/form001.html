@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Meu primeiro formulário:</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+      <!--autocomplete traz sugestões de autopreenchimento. Método: get (padrão) dados aparecem no cabeçalho. post, não aparece, mas é possivel de ser verificado no inspecionador de elementos. Se os dados não forem sensíveis, usar get. Se precisar compartilhar a url, usar get. Get só envia até 3000 bytes, aproximados 3000 caracteres. Se precisar enviar arquivos, tem que ser post.-->
+      <p><label for="inome">Nome:</label> <input type="text" name="name" id="inome" /></p>
+      <!--Name: útil para html e php
+      id: útil para javascript-->
+      <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="isobrenome" /></p> <!--Tem que relacionar o rótulo ao input. Sempre colocar o LABEL-->
+      <p><input type="submit" value="Enviar" /></p>
+      
+    </form>
+  </body>
+</html>
