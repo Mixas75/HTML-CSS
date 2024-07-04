@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form005</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Novos campos:</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="im" value="M"><label for="im"> Masculino</label> <!--tipo rádio, só pode escolher um, mas todos tem que ter o mesmo NAME o Id tem que ser diferente para o LABEL funcionar-->
+            <input type="radio" name="sexo" id="ifm" value="F"><label for="ifm"> Feminino</label>
+            <input type="radio" name="sexo" id="ioutro" value="O"><label for="ioutro"> Outro</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <div>
+            <input type="checkbox" name="futebol" id="ifutebol"><label for="ifutebol"> Futebol</label><br>
+            <input type="checkbox" name="basquete" id="ibasquete"><label for="ibasquete"> Basquete</label><br>
+            <input type="checkbox" name="volei" id="ivolei"><label for="ivolei"> Vôlei</label><br>
+            <input type="checkbox" name="corrida" id="icorrida"><label for="icorrida"> Corrida</label><br>
+            <input type="checkbox" name="natacao" id="inatacao"><label for="inatacao"> Natação</label><br>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar" name="enviar">
+            <input type="reset" value="Excluir" name="excluir">
+        </div>
+    </form>
+</body>
+</html>
