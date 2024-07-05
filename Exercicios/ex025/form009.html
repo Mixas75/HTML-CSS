@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form009</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outro exemplo de Output </h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="inum1">Selecione o número:</label>
+            <input type="range" name="num1" id="inum1" min="0" max="10" value="0" oninput="ival.innerHTML = Number(inum1.value)">
+            <output id="ival">0</output>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="inum1.value = 0; ival.innerHTML = 0;">
+        </div>
+    </form>
+</body>
+</html>

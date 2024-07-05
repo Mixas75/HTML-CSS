@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form010</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mais um exemplo de Output </h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="iano">Em que ano você nasceu:</label>
+            <input type="number" name="iano" id="iano" min="1900" oninput="calcIdade()">
+        </div>
+        <div>
+            <label for="iidade">Este ano você faz: </label>
+            <output id="iidade"></output>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="iano.value = 0; iidade.innerHTML = 0;">
+        </div>
+    </form>
+    <script>
+        function calcIdade() {
+            var iano = document.getElementById("iano").value;
+            var iidade = new Date().getFullYear() - iano;
+            document.getElementById("iidade").innerHTML = iidade + " anos";
+        }
+    </script>
+</body>
+</html>
