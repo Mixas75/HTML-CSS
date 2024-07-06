@@ -1,4 +1,163 @@
 @charset "utf-8";
 
-/* *Todas as demais midias*/
+/* Todas as demais midias*/
 
+/** tipical device breakpoints
+
+Pequenas Telas: até 600px - já estão na mobile first
+Celular: 601px até 768px - já estão na mobile first
+Tablet: 769px até 992px
+Desktop: 993px até 1200px
+Grandes Telas: 1201px e mais
+
+*/
+
+@media print {
+  * {
+    font-family: "Courier New", Courier, monospace;
+  }
+  body {
+    background-image: url(../imagens/back-print.jpg); /** Desnecessário - não imprime background*/
+  }
+  main {
+    width: 90vw;
+    border: 2px solid black;
+  }
+  main::after {
+    content: "Esta impressão foi idealizada como parte do curso HTML+CSS do Curso em Vídeo.";
+    font-size: 16px;
+  }
+  h1 {
+    text-shadow: none;
+    color: black;
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: block;
+  }
+  img#desktop {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .tv {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: block;
+  }
+  img#print {
+    display: none;
+  }
+  img#desktop {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
+
+  .phone {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .tv {
+    display: none;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#desktop {
+    display: block;
+  }
+  img#tv {
+    display: none;
+  }
+
+  .phone {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .tv {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+  }
+  main {
+    width: 700px;
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#desktop {
+    display: none;
+  }
+  img#tv {
+    display: block;
+  }
+
+  .phone {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .tv {
+    display: block;
+  }
+}
