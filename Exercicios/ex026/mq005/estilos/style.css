@@ -48,6 +48,14 @@ menu > ul > li > a {
 a:hover{
     background-color: rgb(177, 176, 176);
 }
+main{
+    width: 90vw;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 10px;
+    
+
+}
 article > h2{
     text-align: center;
     padding: 10px;
