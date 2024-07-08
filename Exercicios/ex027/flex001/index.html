@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexBox</title>
     <style>
-        div.container{
+        /* * Flex-direction:
+        row: padrão, o conteúdo é disposto em linha horizontal, de esquerda para direita.
+        row-reverse: o conteúdo é disposto em linha horizontal, de direita para a esquerda.
+        column: o conteúdo é disposto em coluna vertical, de cima para baixo.
+        column-reverse: o conteúdo é disposto em coluna vertical, de baixo para cima.
+        */
+        div.containerfr{
             background-color: lightsalmon;
             display: flex;
+            flex-direction: row;
+        }
+        div.containerfrr{
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        div.containerfc{
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column;
+        }
+        div.containerfcr{
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column-reverse;
         }
         div.item{
 background-color: lightblue;
@@ -17,8 +39,18 @@ text-align: center;
         }
     </style>
 </head>
-<body>
-    <div class="container">
+<body><h1>Display: flex + flex-direction: row</h1>
+    <div class="containerfr">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div><br>
+    <h1>Display: flex + flex-direction: row-reverse</h1>
+    <div class="containerfrr">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
@@ -27,5 +59,27 @@ text-align: center;
         <div class="item">F</div>
         <div class="item">G</div>
     </div>
+    <h1>Display: flex + flex-direction: column</h1>
+    <div class="containerfc">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>Display: flex + flex-direction: column-reverse</h1>
+    <div class="containerfcr">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>Eixos: Axis x Cross</h1>
+    <img src="../imagens/colwdnjc.png" alt="Eixos e Direções">
 </body>
 </html>

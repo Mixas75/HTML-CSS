@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        /* * Flex-Wrap:
+        nowrap: padrão. O encolhimento dos itens filhos, depende do conteúdo do filho.
+        wrap: quebra de linha no sentido do cross-axis.
+        wrap-reverse: quebra de linha ao contrário do sentido do cross-axis.
+        flex-flow: flex-direction + flex-wrap (ex: flex-flow: row nowrap)
+        */
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.item{
+background-color: lightblue;
+border: 1px solid black;
+flex: auto;
+text-align: center;
+padding: 10px;
+        }
+    </style>
+</head>
+<body><h1>Flex-Wrap</h1>
+    <div class="container">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+
+</body>
+</html>
