@@ -10,3 +10,15 @@ space-around: entre os itens há espaços duplos
 Align-items: alinhar os itens, o conteúdo, dentro do eixo transversal (cross-axis)
 
 Justify-content: alinhar os itens, o conteúdo, dentro do eixo principal (main-axis)
+
+Flex-item
+Por padrão, os itens não são flexíveis.
+order: 0 (padrão), os elementos são exibidos na ordem de inserção.
+Se alterarmos o order (ex: 3, 5, -2, 0), as CSS colocam em ordem crescente e exibem (-2,0,3,5)
+
+align-self: aplica aos itens. funciona no cross-axis
+auto: herda o alinhamento vertical do pai
+flex-start: perto do cross-start
+flex-end:
+center:
+strecht:
