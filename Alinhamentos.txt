@@ -1,0 +1,12 @@
+Align-content: alinhar os itens, o conteúdo, dentro do eixo transversal (cross-axis) qundo estão envelopados
+stretch: (padrão) esticado
+flex-start: gruda no cross-start
+flex-end: gruda no cross-end
+center: alinha ao crentro do cross-axis
+space-between: sem espaço no início e no final, espaço nos meios
+space-evenly: começa e termina com espaço
+space-around: entre os itens há espaços duplos
+
+Align-items: alinhar os itens, o conteúdo, dentro do eixo transversal (cross-axis)
+
+Justify-content: alinhar os itens, o conteúdo, dentro do eixo principal (main-axis)
