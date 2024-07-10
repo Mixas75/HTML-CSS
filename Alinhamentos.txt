@@ -22,3 +22,8 @@ flex-start: perto do cross-start
 flex-end:
 center:
 strecht:
+
+Flex-basis: determina largura (ou altura) do elemento filho.
+auto: de acordo com o conteúdo
+200px: esse será o tamanho, não importa o tamanho do conteúdo. Se não travar, poderá ser encolhido ao encolher o container
+

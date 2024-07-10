@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      div.container {
+        background-color: lightsalmon;
+        display: flex;
+        flex-flow: row nowrap;
+      }
+      div#fixo-wrap{
+        background-color: lightsalmon;
+        display: flex;
+        flex-flow: row wrap;
+      }
+      div#auto{
+flex-basis: auto;
+      }
+      div#fixo{
+        flex-basis: 150px;
+      }
+      div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Teste de flex-basis: auto</h1>
+    <div class="container">
+      <div class="item" id="auto">A</div>
+      <div class="item" id="auto">B</div>
+      <div class="item" id="auto">Conteúdo maior</div>
+      <div class="item" id="auto">D</div>
+      <div class="item" id="auto">Conteúdo um pouco maior</div>
+      <div class="item" id="auto">F</div>
+      <div class="item" id="auto">Conteúdo maior ainda, cada vez maior</div>
+    </div>
+    <h1>Teste de flex-basis: com tamanho definido (150px) - nowrap</h1>
+    <div class="container" >
+      <div class="item" id="fixo">A</div>
+      <div class="item" id="fixo">B</div>
+      <div class="item" id="fixo">Conteúdo maior</div>
+      <div class="item" id="fixo">D</div>
+      <div class="item" id="fixo">Conteúdo um pouco maior</div>
+      <div class="item" id="fixo">F</div>
+      <div class="item" id="fixo">Conteúdo maior ainda, cada vez maior</div>
+    </div>
+    <h1>Teste de flex-basis: com tamanho definido (150px) - wrap</h1>
+    <div class="container" id="fixo-wrap">
+      <div class="item" id="fixo">A</div>
+      <div class="item" id="fixo">B</div>
+      <div class="item" id="fixo">Conteúdo maior</div>
+      <div class="item" id="fixo">D</div>
+      <div class="item" id="fixo">Conteúdo um pouco maior</div>
+      <div class="item" id="fixo">F</div>
+      <div class="item" id="fixo">Conteúdo maior ainda, cada vez maior</div>
+    </div>
+    <br />
+  </body>
+</html>
