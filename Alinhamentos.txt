@@ -29,3 +29,14 @@ auto: de acordo com o conteúdo
 
 Flex-grow: 0 (padrão) - não pode crescer. 1 - pode crescer (qualquer valor positivo e dif de zero, qto maior o valor, maior a proporção de mudança)
 Flex-shrink: 1 (padrão) - pode encolher (qualquer valor positivo e dif de zero, qto maior o valor, maior a proporção de mudança). 0 - não pode encolher
+
+Shorthand: sempre para o item filho
+flex: flex-grow flex-shrink flex-basis
+flex: 0 1 150px (grow:0 shrink:1 basis: 150px)
+flex: 0 1 auto é o mesmo que não colocar, pois usa o valor padrão de cada propriedade
+flex: initial: flex: 0 1 auto (os dois são iguais)
+flex: 0 0 auto (não ser flexível)
+flex: none :  flex: 0 0 auto
+flex: 1 1 auto (máximmo de flexibilidade)
+flex: auto : flex: 0 0 auto
+flex: 3 (só muda o falor do primeiro elemento: grow, mantendo o padrão dos demais) : flex: 3 1 auto
