@@ -27,3 +27,5 @@ Flex-basis: determina largura (ou altura) do elemento filho.
 auto: de acordo com o conteúdo
 200px: esse será o tamanho, não importa o tamanho do conteúdo. Se não travar, poderá ser encolhido ao encolher o container
 
+Flex-grow: 0 (padrão) - não pode crescer. 1 - pode crescer (qualquer valor positivo e dif de zero, qto maior o valor, maior a proporção de mudança)
+Flex-shrink: 1 (padrão) - pode encolher (qualquer valor positivo e dif de zero, qto maior o valor, maior a proporção de mudança). 0 - não pode encolher

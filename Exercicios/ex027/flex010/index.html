@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      div.container {
+        background-color: lightsalmon;
+        display: flex;
+        flex-flow: row nowrap;
+      }
+      div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        flex-basis: 50px;
+      }
+      div#grow{
+        flex-grow: 1;
+      }
+      div.container#shrink1 {
+        background-color: rgb(16, 251, 8);
+        display: flex;
+        flex-flow: row nowrap;
+        width: 200px;
+      }
+      div.container#shrink0 {
+        background-color: rgb(16, 251, 8);
+        display: flex;
+        flex-flow: row nowrap;
+        width: 200px;
+        flex-grow: 0;
+      }
+      div#shrink{
+        flex-shrink: 0;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Teste de flex-grow: 0 - não crescer (padrão)</h1>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </div>
+    <h1>Teste de flex-grow: 1 - crescer (não padrão)</h1>
+    <div class="container">
+      <div class="item" id="grow">A</div>
+      <div class="item" id="grow">B</div>
+      <div class="item" id="grow">C</div>
+      <div class="item" id="grow">D</div>
+      <div class="item" id="grow">E</div>
+      <div class="item" id="grow">F</div>
+      <div class="item" id="grow">G</div>
+    </div>
+    <h1>Teste de flex-shrink: 1 - encolher (padrão)</h1>
+    <div class="container" id="shrink1">
+      <div class="item" id="shrink1">A</div>
+      <div class="item" id="shrink1">B</div>
+      <div class="item" id="shrink1">C</div>
+      <div class="item" id="shrink1">D</div>
+      <div class="item" id="shrink1">E</div>
+      <div class="item" id="shrink1">F</div>
+      <div class="item" id="shrink1">G</div>
+    </div>
+    <h1>Teste de flex-shrink: 0 - não encolher (não padrão)</h1>
+    <div class="container" id="shrink0">
+      <div class="item" id="shrink">A</div>
+      <div class="item" id="shrink">B</div>
+      <div class="item" id="shrink">C</div>
+      <div class="item" id="shrink">D</div>
+      <div class="item" id="shrink">E</div>
+      <div class="item" id="shrink">F</div>
+      <div class="item" id="shrink">G</div>
+    </div>
+  </body>
+</html>
