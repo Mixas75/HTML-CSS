@@ -1,0 +1,35 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /*background-color: red;*/
+  max-width: 95dvw;
+ 
+}
+header {
+  /*background-color: blue;*/
+  width: 95dvw;
+  flex-flow: column nowrap;
+}
+header > nav {
+  flex-flow: column nowrap;
+}
+header > h1 {
+  flex-basis: 45px;
+}
+header > nav > a {
+  width: 90dvw;
+}
+main {
+  /*background-color: green;*/
+ 
+  width: 90dvw;
+  margin-top: 10px;
+}
+main > h2{
+    text-align: center;
+}
+
