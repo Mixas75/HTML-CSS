@@ -9,21 +9,43 @@ body{
     font-size: 1em;
     background-color: lightgray;
     height: 100dvh;
-    width: 100dvh;
+    width: 100dvw;
     
 }
 header{
     background-color: gray;
     color: white;
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 header > h1{
     padding-left: 10px;
     border: 1px dashed black;
+    flex: 0 0 200px;
 }
 header > nav{
-    padding-left: 10px;
-    border: 1px dashed black;
+        border: 1px dashed black;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+}
+header > nav > a{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    text-align: center;
+    
+}
+header > nav > a:hover{
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
 }
 main{
     background-color: white;
